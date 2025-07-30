@@ -1,0 +1,49 @@
+# all http methods
+
+- GET : fetch/retrieve the resource
+= HEAD : No message body(only headers will be sended)
+- OPTIONS : what options are available at that particular endpoint
+            (eg : at '/user' only GET & POST options are possible)
+- DELETE : to remove a data
+- PUT : to update the data
+- POST : to add new resource
+- PATCH : to edit the particular part of the data
+
+
+# HTTP status codes 
+1xx : Informational
+2xx : Success
+3xx : Redirection
+4xx : Client Error
+5xx : Server Error
+
+
+# imp status codes & uses
+100 : continue
+102 : processing
+
+200 : GET(request was successful)
+201 : POST(request was successful and new data/resource was created)
+204 : DELETE(request was successful, no content to return)
+
+400 : bad request(The server cannot or will not process the request due to a client-side error)
+- Malformed syntax (e.g. invalid JSON)
+- Missing required parameters
+- Invalid query strings
+- Unexpected data format
+
+401 : missing info/authentication failed
+- wrong or expired token
+- invalid password OR password not matched
+- user is not logged in 
+
+402 : payment required
+404 : Error not found
+409 : Client/User error
+
+500 : internal server error
+504 : gateway timeout 
+
+
+-- Apple font : 
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
